@@ -1,0 +1,21 @@
+{
+    "name": "WebSocket Blocker",
+    "version": "1",
+	"manifest_version":2,
+    "description": "Detects and blocks websockets in open webpages.",
+	"author":"Tom Wedgbury",
+    "icons": {
+      "128": "icon.png"
+    },
+    "background": {
+      "persistent": true,
+      "scripts": ["background_script.js"]
+    },
+    "permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>"],
+    "browser_action": {
+      "default_icon": "icon.png"
+    }
+}
